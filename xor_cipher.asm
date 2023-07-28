@@ -3,8 +3,6 @@ global _start
 
 _start:
     mov ecx, 11      ; number of characters to encrypt
-
-    ; Calculate the XOR key (remainder)
     mov eax, 23
     mov ebx, 5
     xor edx, edx   ; Clear EDX for the division operation
