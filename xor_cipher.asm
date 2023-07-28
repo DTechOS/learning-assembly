@@ -5,7 +5,7 @@ _start:
     mov ecx, 11      ; number of characters to encrypt
     mov eax, 23
     mov ebx, 5
-    xor edx, edx   ; Clear EDX for the division operation
+    xor edx, edx
     div ebx
 
 loop1:
@@ -14,7 +14,7 @@ loop1:
     mov ebx, msg    ; start of message
     add ebx, ecx
     sub ebx, 1
-    mov al, [ebx]   ; address of current character
+    mov al, [ebx]
     xor al, dl
     mov [ebx], al
     pop ecx
